@@ -17,10 +17,70 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  outline: 1px solid red;
+
+  width: 1200px;
+
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header */
+.header {
+  background-color: var(--main-bg-color);
+}
 ul {
   list-style-type: none;
 }
 /* Header */
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  text-decoration: none;
+  color: #000;
+  font-family: var(--main-font);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+
+  margin-right: 120px;
+}
+.navigation {
+}
+.logo-accent {
+  color: var(--accent-color);
+  font-family: var(--secondary-font);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+}
+
 .header-link {
   text-decoration: none;
   font-family: var(--main-font);
@@ -30,14 +90,31 @@ ul {
   letter-spacing: 0.28px;
 }
 
-.header-link-acnt {
+.header-list-contact {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-link-mail {
   text-decoration: none;
   width: 135px;
   height: 16px;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--main-font);
   font-weight: 500;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--secondary-text-color);
+
+  margin-right: 50px;
+}
+
+.header-link-phone {
+  text-decoration: none;
+  width: 135px;
+  height: 16px;
+  font-family: var(--main-font);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
 }
 
 .header-link-accent {
@@ -60,34 +137,32 @@ ul {
 .header-link-accent:focus {
   color: var(--accent-color);
 }
-.header-link-acnt:hover {
+.header-link-mail:hover {
   color: var(--accent-color);
 }
-.header-link-acnt:focus {
+.header-link-mail:focus {
   color: var(--accent-color);
 }
-.logo {
-  text-decoration: none;
-  color: #000;
-  font-family: var(--main-font);
-  font-size: 26px;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.78px;
-}
-.logo-accent {
+
+.header-link-phone:hover {
   color: var(--accent-color);
-  font-family: var(--secondary-font);
-  font-size: 26px;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.78px;
 }
+.header-link-phone:focus {
+  color: var(--accent-color);
+}
+
 /* Hero */
 .hero-section {
   background-color: var(--dark-bg-color);
 }
 .hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36364;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+
   color: #fff;
   text-align: center;
   font-family: var(--main-font);
@@ -116,6 +191,7 @@ ul {
 
 .detail-list-item {
   width: 270px;
+  height: 16px;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.42px;
@@ -127,11 +203,11 @@ ul {
   flex-shrink: 0;
 
   color: var(--secondary-text-color);
-  line-height: 1.71;
   letter-spacing: 0.42px;
 }
 .punctuality-list-item {
   width: 270px;
+  height: 16px;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.42px;
@@ -143,11 +219,11 @@ ul {
   flex-shrink: 0;
 
   color: var(--secondary-text-color);
-  line-height: 1.71;
   letter-spacing: 0.42px;
 }
 .diligence-list-item {
   width: 270px;
+  height: 16px;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.42px;
@@ -159,11 +235,11 @@ ul {
   flex-shrink: 0;
 
   color: var(--secondary-text-color);
-  line-height: 1.71;
   letter-spacing: 0.42px;
 }
 .technologie-list-item {
   width: 270px;
+  height: 16px;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.42px;
@@ -175,12 +251,13 @@ ul {
   flex-shrink: 0;
 
   color: var(--secondary-text-color);
-  line-height: 1.71;
   letter-spacing: 0.42px;
 }
 .our-activity-title {
+  font-family: var(--main-font);
   text-align: center;
 
+  color: var(--main-text-color);
   font-size: 36px;
   font-weight: 700;
   line-height: normal;
@@ -270,7 +347,7 @@ ul {
   letter-spacing: 0.78px;
 }
 .logo-footer-accent {
-  color: #2196f3;
+  color: var(--accent-color);
   font-family: Raleway bold;
   font-size: 26px;
   font-weight: 700;
@@ -280,18 +357,16 @@ ul {
 .footer-text {
   font-style: normal;
   color: #fff;
-  font-size: 14px;
-  line-height: 1.71;
+
   letter-spacing: 0.42px;
 }
 .footer-link {
+  font-style: normal;
   text-decoration: none;
   width: 231px;
   height: 21px;
   flex-shrink: 0;
   color: rgba(255, 255, 255, 0.6);
-  font-size: 14px;
-  line-height: 1.71;
   letter-spacing: 0.42px;
 }
 .footer-link:hover {
