@@ -239,11 +239,13 @@ ul {
   width: 270px;
   height: 16px;
   font-weight: 700;
+  font-size: 14px;
   line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
 }
 .detail-text {
+  font-size: 14px;
   width: 270px;
   height: 72px;
   flex-shrink: 0;
@@ -254,12 +256,14 @@ ul {
 .punctuality-list-item {
   width: 270px;
   height: 16px;
+  font-size: 14px;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
 }
 .punctuality-text {
+  font-size: 14px;
   width: 270px;
   height: 48px;
   flex-shrink: 0;
@@ -270,12 +274,14 @@ ul {
 .diligence-list-item {
   width: 270px;
   height: 16px;
+  font-size: 14px;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
 }
 .diligence-text {
+  font-size: 14px;
   width: 270px;
   height: 48px;
   flex-shrink: 0;
@@ -284,6 +290,7 @@ ul {
   letter-spacing: 0.42px;
 }
 .technologie-list-item {
+  font-size: 14px;
   width: 270px;
   height: 16px;
   font-weight: 700;
@@ -292,6 +299,7 @@ ul {
   text-transform: uppercase;
 }
 .technologies-text {
+  font-size: 14px;
   width: 270px;
   height: 72px;
   flex-shrink: 0;
@@ -321,6 +329,12 @@ ul {
   margin-right: 30px;
 }
 /* Our team */
+.team-img {
+  margin-bottom: 30px;
+}
+.team-name {
+  margin-bottom: 10px;
+}
 .our-team-title {
   text-align: center;
   font-size: 36px;
@@ -336,7 +350,17 @@ ul {
   justify-content: center;
 }
 .team-members {
+  border-radius: 0 0 4px 4px;
+  width: 270px;
+  height: 368px;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  background: #fff;
+
   margin-right: 30px;
+}
+.team-proffesion {
+  margin-bottom: 30px;
 }
 .our-team-section {
   background: var(--secondary-bg-color);
@@ -430,6 +454,9 @@ ul {
   color: #fff;
 
   letter-spacing: 0.42px;
+}
+.footer-container {
+  text-align: left;
 }
 .footer-link {
   justify-content: left;
