@@ -49,6 +49,11 @@ img {
   margin-right: auto;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* Header */
 .header {
   background-color: var(--main-bg-color);
@@ -201,6 +206,8 @@ ul {
   color: #fff;
   text-align: center;
   font-family: var(--main-font);
+
+  margin-bottom: 30px;
 }
 .hero-button {
   margin: 0 auto;
@@ -222,6 +229,10 @@ ul {
 /* Our activity */
 .our-activity-section {
   background: var(--main-bg-color);
+}
+.our-activity-list {
+  display: flex;
+  align-items: center;
 }
 
 .detail-list-item {
@@ -297,6 +308,17 @@ ul {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1.08px;
+
+  margin-bottom: 50px;
+}
+
+/* Activity images */
+.activity-images {
+  display: flex;
+  justify-content: center;
+}
+.img-box-activity {
+  margin-right: 30px;
 }
 /* Our team */
 .our-team-title {
@@ -305,6 +327,16 @@ ul {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1.08px;
+
+  margin-bottom: 50px;
+}
+.our-team-list {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+.team-members {
+  margin-right: 30px;
 }
 .our-team-section {
   background: var(--secondary-bg-color);
@@ -369,7 +401,11 @@ ul {
 }
 
 /* Footer */
-.footer-saction {
+
+.footer-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background: var(--dark-bg-color);
 }
 .logo-footer {
@@ -396,6 +432,7 @@ ul {
   letter-spacing: 0.42px;
 }
 .footer-link {
+  justify-content: left;
   font-style: normal;
   text-decoration: none;
   width: 231px;
