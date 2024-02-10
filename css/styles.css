@@ -66,6 +66,16 @@ ul {
 }
 
 .header-container {
+  outline: 1px solid red;
+
+  width: 1200px;
+
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin-left: auto;
+  margin-right: auto;
+
   display: flex;
   align-items: center;
 }
@@ -447,6 +457,10 @@ ul {
 }
 
 /* Footer */
+.footer-container {
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
 
 .footer-section {
   padding-top: 60px;
@@ -508,6 +522,37 @@ ul {
 }
 
 /* portfolio */
+.portfolio-header-container {
+  width: 1200px;
+  display: flex;
+  align-items: center;
+}
+
+.portfolio-logo {
+  text-decoration: none;
+  color: #000;
+  font-family: var(--main-font);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+
+  margin-right: 120px;
+}
+.portfolio-header-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  margin-right: 50px;
+  text-decoration: none;
+  font-family: var(--main-font);
+  color: var(--main-text-color);
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+
 .portfolio-links-list {
   font-family: var(--main-font);
 }
@@ -523,10 +568,24 @@ ul {
 .portfoli-item-link {
   text-decoration: none;
 }
+/* filter section */
+.filters-list {
+  display: flex;
+  justify-content: center;
+}
 .filters-items-button {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--main-text-color);
   background: var(--secondary-bg-color);
   border-radius: 4px;
   flex-shrink: 0;
+
+  margin-bottom: 50px;
 }
 .filters-items-button:hover {
   background: var(--accent-color);
@@ -538,13 +597,20 @@ ul {
 }
 
 .filters-items-button-accent {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--main-text-color);
   border-radius: 4px;
   width: 73px;
   flex-shrink: 0;
-  border-radius: 4px;
   background: var(--accent-color);
   color: #fff;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+  margin-bottom: 50px;
 }
 .portfolio-product-name {
   font-weight: 700;
