@@ -198,6 +198,9 @@ ul {
 .hero-section {
   background-color: var(--dark-bg-color);
 }
+.hero-container {
+  height: 600px;
+}
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -213,6 +216,8 @@ ul {
   margin-bottom: 30px;
 }
 .hero-button {
+  margin: 0 auto;
+  display: block;
   text-align: center;
   width: 216px;
   height: 50px;
@@ -490,8 +495,7 @@ ul {
 
   margin-bottom: 9px;
 }
-.footer-link:last-child {
-}
+
 .footer-link:hover {
   color: var(--accent-color);
 }
