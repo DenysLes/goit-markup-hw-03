@@ -199,7 +199,6 @@ ul {
   background-color: var(--dark-bg-color);
 }
 .hero-container {
-  height: 600px;
 }
 .hero-title {
   font-weight: 900;
