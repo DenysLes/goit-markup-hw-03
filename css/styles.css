@@ -371,6 +371,9 @@ ul {
 
   margin-right: 30px;
 }
+.team-members:last-child {
+  margin-right: 0;
+}
 .team-proffesion {
   margin-bottom: 30px;
 }
@@ -452,6 +455,8 @@ ul {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.78px;
+
+  margin-bottom: 20px;
 }
 .logo-footer-accent {
   color: var(--accent-color);
