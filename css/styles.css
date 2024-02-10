@@ -213,9 +213,7 @@ ul {
   margin-bottom: 30px;
 }
 .hero-button {
-  margin: 0 auto;
-  display: block;
-
+  text-align: center;
   width: 216px;
   height: 50px;
   flex-shrink: 0;
@@ -448,6 +446,7 @@ ul {
   background: var(--dark-bg-color);
 }
 .logo-footer {
+  display: block;
   text-decoration: none;
   color: #fff;
   font-family: Raleway;
@@ -471,12 +470,15 @@ ul {
   color: #fff;
 
   letter-spacing: 0.42px;
+
+  margin-bottom: 9px;
 }
 
 .footer-contacts {
   text-align: left;
 }
 .footer-link {
+  display: block;
   justify-content: left;
   font-style: normal;
   text-decoration: none;
@@ -485,6 +487,10 @@ ul {
   flex-shrink: 0;
   color: rgba(255, 255, 255, 0.6);
   letter-spacing: 0.42px;
+
+  margin-bottom: 9px;
+}
+.footer-link:last-child {
 }
 .footer-link:hover {
   color: var(--accent-color);
