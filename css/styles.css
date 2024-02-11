@@ -50,7 +50,6 @@ img {
 }
 
 .section {
-  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -66,16 +65,6 @@ ul {
 }
 
 .header-container {
-  outline: 1px solid red;
-
-  width: 1200px;
-
-  padding-left: 15px;
-  padding-right: 15px;
-
-  margin-left: auto;
-  margin-right: auto;
-
   display: flex;
   align-items: center;
 }
@@ -89,7 +78,7 @@ ul {
   line-height: normal;
   letter-spacing: 0.78px;
 
-  margin-right: 120px;
+  margin-right: 93px;
 }
 
 .logo-accent {
@@ -100,17 +89,20 @@ ul {
   line-height: normal;
   letter-spacing: 0.78px;
 }
+
 .header-link-list {
-  display: inline-flex;
+  display: flex;
   align-items: center;
 }
-.header-link:first-child {
+.nav-link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
   margin-right: 50px;
+}
+.nav-link:last-child {
+  margin-right: 0;
+}
 
+.header-link-accent {
   text-decoration: none;
   font-family: var(--main-font);
   color: var(--accent-color);
@@ -124,8 +116,6 @@ ul {
   padding-top: 32px;
   padding-bottom: 32px;
 
-  margin-right: 50px;
-
   text-decoration: none;
   font-family: var(--main-font);
   color: var(--main-text-color);
@@ -133,24 +123,16 @@ ul {
   line-height: normal;
   letter-spacing: 0.28px;
 }
-.header-link:last-child {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
 
-  margin-right: 0;
-
-  font-family: var(--main-font);
-  color: var(--main-text-color);
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.28px;
-  text-decoration: none;
+.header-group {
+  margin-left: auto;
 }
 
 .header-list-contact {
   display: flex;
-  margin-left: auto;
+}
+.group-link {
+  margin-right: 50px;
 }
 
 .header-link-mail {
@@ -161,8 +143,6 @@ ul {
   font-weight: 500;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
-
-  margin-right: 50px;
 }
 
 .header-link-phone {
@@ -210,11 +190,10 @@ ul {
 /* Hero */
 .hero-section {
   background-color: var(--dark-bg-color);
-}
-.hero-container {
   padding-top: 200px;
   padding-bottom: 200px;
 }
+
 .hero-title {
   width: 650px;
   margin-left: auto;
@@ -256,7 +235,8 @@ ul {
 .our-activity-list {
   display: flex;
 }
-.our-activity-items {
+
+.our-activity-items:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -268,6 +248,8 @@ ul {
   line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+
+  margin-bottom: 10px;
 }
 .detail-text {
   font-size: 14px;
@@ -287,6 +269,8 @@ ul {
   line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+
+  margin-bottom: 10px;
 }
 .punctuality-text {
   font-size: 14px;
@@ -306,6 +290,8 @@ ul {
   line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+
+  margin-bottom: 10px;
 }
 .diligence-text {
   font-size: 14px;
@@ -325,6 +311,8 @@ ul {
   line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+
+  margin-bottom: 10px;
 }
 .technologies-text {
   font-size: 14px;
@@ -361,9 +349,7 @@ ul {
   margin-right: 0px;
 }
 /* Our team */
-.team-img {
-  margin-bottom: 30px;
-}
+
 .team-name {
   margin-bottom: 10px;
 }
@@ -384,19 +370,21 @@ ul {
 .team-members {
   border-radius: 0 0 4px 4px;
   width: 270px;
-  height: 368px;
+
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
   background: #fff;
 
   margin-right: 30px;
 }
+.team-members-info {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
 .team-members:last-child {
   margin-right: 0;
 }
-.team-proffesion {
-  margin-bottom: 30px;
-}
+
 .our-team-section {
   background: var(--secondary-bg-color);
 }
@@ -543,7 +531,7 @@ ul {
   margin-right: 120px;
 }
 .portfolio-links-list {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   margin-bottom: 32px;
   margin-top: 32px;
@@ -570,7 +558,7 @@ ul {
   color: var(--accent-color);
 }
 
-.portfolio-header-link {
+.portfolio-header-link-accent {
   display: block;
   text-decoration: none;
   font-family: var(--main-font);
@@ -581,17 +569,17 @@ ul {
 
   margin-right: 50px;
 }
-/* 
-.portfolio-links-list-acnt:hover {
+
+.portfolio-links-list-accent:hover {
   font-family: var(--main-font);
 }
-.portfolio-links-list-acnt:focus {
+.portfolio-links-list-accent:focus {
   font-family: var(--main-font);
-} */
-.portfolio-header-link:last-child {
+}
+/* .portfolio-header-link:last-child {
   display: block;
   margin-right: 0;
-}
+} */
 
 /* filter section */
 .filters-list {
