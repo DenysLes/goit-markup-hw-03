@@ -48,7 +48,7 @@ img {
 }
 
 .section {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 /* Header */
@@ -233,7 +233,7 @@ ul {
 /* Our activity */
 .our-activity-section {
   background: var(--main-bg-color);
-  margin-top: 94px;
+  padding-top: 94px;
 }
 .our-activity-list {
   display: flex;
@@ -353,7 +353,7 @@ ul {
 }
 /* Our team */
 .our-team-section {
-  margin-top: 94px;
+  padding-top: 94px;
 }
 
 .team-name {
@@ -370,7 +370,7 @@ ul {
 }
 .our-team-list {
   display: flex;
-  /* align-items: center; */
+
   justify-content: center;
 }
 .team-members {
