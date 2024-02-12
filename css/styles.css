@@ -587,7 +587,9 @@ ul {
 .portfolio-links-list-accent:focus {
   font-family: var(--main-font);
 }
-
+.main-container {
+  margin-top: 94px;
+}
 /* filter section */
 .filters-list {
   display: flex;
@@ -645,6 +647,8 @@ ul {
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .portfolio-item {
   width: 370px;
@@ -652,13 +656,7 @@ ul {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-.portfolio-item:nth-last-child(7) {
-  margin-right: 0;
-}
-.portfolio-item:nth-last-child(4) {
-  margin-right: 0;
-}
-.portfolio-item:nth-last-child(1) {
+.portfolio-item:nth-last-child(3n + 1) {
   margin-right: 0;
 }
 
@@ -678,6 +676,8 @@ ul {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+
+  padding-bottom: 20px;
 }
 .portfoli-image {
   padding-bottom: 20px;
