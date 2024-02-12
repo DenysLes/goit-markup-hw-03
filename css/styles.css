@@ -97,6 +97,7 @@ ul {
   display: block;
   margin-right: 50px;
 }
+
 .nav-link:last-child {
   margin-right: 0;
 }
@@ -534,7 +535,7 @@ ul {
   line-height: normal;
   letter-spacing: 0.78px;
 
-  margin-right: 120px;
+  margin-right: 162px;
 }
 .portfolio-links-list {
   display: flex;
@@ -542,12 +543,16 @@ ul {
   margin-bottom: 32px;
   margin-top: 32px;
 }
+.portfolio-nav-link {
+  margin-right: 50px;
+}
+.portfolio-nav-link:last-child {
+  margin-right: 0;
+}
 .portfolio-header-link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-
-  margin-right: 50px;
 
   text-decoration: none;
   font-family: var(--main-font);
@@ -566,14 +571,14 @@ ul {
 
 .portfolio-header-link-accent {
   display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   text-decoration: none;
   font-family: var(--main-font);
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
   color: var(--accent-color);
-
-  margin-right: 50px;
 }
 
 .portfolio-links-list-accent:hover {
@@ -582,10 +587,6 @@ ul {
 .portfolio-links-list-accent:focus {
   font-family: var(--main-font);
 }
-/* .portfolio-header-link:last-child {
-  display: block;
-  margin-right: 0;
-} */
 
 /* filter section */
 .filters-list {
@@ -605,6 +606,9 @@ ul {
   flex-shrink: 0;
 
   margin-bottom: 50px;
+  margin-right: 8px;
+}
+.filters-items-button:not(:last-child) {
   margin-right: 8px;
 }
 .filters-items-button:hover {
