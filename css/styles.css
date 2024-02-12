@@ -593,6 +593,13 @@ ul {
   display: flex;
   justify-content: center;
 }
+.filter-items {
+  margin-bottom: 50px;
+  margin-right: 8px;
+}
+.filter-items:last-child {
+  margin-right: 0;
+}
 .filters-items-button {
   font-family: var(--main-font);
   font-weight: 500;
@@ -604,13 +611,8 @@ ul {
   background: var(--secondary-bg-color);
   border-radius: 4px;
   flex-shrink: 0;
+}
 
-  margin-bottom: 50px;
-  margin-right: 8px;
-}
-.filters-items-button:not(:last-child) {
-  margin-right: 8px;
-}
 .filters-items-button:hover {
   background: var(--accent-color);
   color: #fff;
@@ -633,9 +635,6 @@ ul {
   flex-shrink: 0;
   background: var(--accent-color);
   color: #fff;
-
-  margin-bottom: 50px;
-  margin-right: 8px;
 }
 /* Portfolio items */
 
@@ -652,12 +651,6 @@ ul {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-/* .portfolio-item:nth-last-child(3n) {
-  margin-right: 0;
-}
-.portfolio-item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
-} */
 
 .portfolio-product-name {
   font-weight: 700;
