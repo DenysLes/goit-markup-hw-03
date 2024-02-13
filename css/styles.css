@@ -654,7 +654,6 @@ ul {
   display: flex;
   flex-wrap: wrap;
   margin-right: -30px;
-  /* gap: 30px; */
 }
 .portfolio-item {
   width: 370px;
