@@ -662,6 +662,13 @@ ul {
   margin-bottom: 0;
 } */
 
+.portfolio-item-titel {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .portfolio-product-name {
   font-weight: 700;
   font-size: 18px;
