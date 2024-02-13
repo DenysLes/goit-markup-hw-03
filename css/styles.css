@@ -657,6 +657,7 @@ ul {
 }
 .portfolio-item {
   width: 370px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 
   margin-bottom: 30px;
   margin-right: 30px;
@@ -669,7 +670,10 @@ ul {
   margin-bottom: 0;
 }
 
-.portfolio-item-titel {
+.portfolio-item-title {
+  border-left: 1px solid #d74747;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 20px;
@@ -682,14 +686,12 @@ ul {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-text-color);
+
+  /* margin-bottom: 4px; */
 }
 .portfolio-product {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-}
-
-.portfolio-product-name {
-  margin-bottom: 4px;
 }
