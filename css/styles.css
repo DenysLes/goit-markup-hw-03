@@ -619,7 +619,11 @@ ul {
   color: var(--main-text-color);
   background: var(--secondary-bg-color);
   border-radius: 4px;
-  flex-shrink: 0;
+
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 22px;
+  padding-left: 22px;
 }
 
 .filters-items-button:hover {
@@ -643,6 +647,11 @@ ul {
 
   background: var(--accent-color);
   color: #fff;
+
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 25px;
+  padding-left: 25px;
 }
 /* Portfolio items */
 
@@ -653,7 +662,6 @@ ul {
 .portfolio-items-list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
 }
 .portfolio-item {
   width: 370px;
@@ -687,7 +695,7 @@ ul {
   letter-spacing: 0.06em;
   color: var(--main-text-color);
 
-  /* margin-bottom: 4px; */
+  margin-bottom: 4px;
 }
 .portfolio-product {
   font-size: 16px;
